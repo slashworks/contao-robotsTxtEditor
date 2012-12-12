@@ -1,0 +1,18 @@
+<div id="tl_buttons">
+    <a href="<?php echo $this->href; ?>" class="header_back" title="<?php echo $this->title; ?>"><?php echo $this->button; ?></a>
+</div>
+
+<form action="" id="tl_robotsTxtEditor" class="tl_form" method="post">
+    <div class="tl_formbody_edit">
+        <input type="hidden" name="FORM_SUBMIT" value="is_send">
+        <input type="hidden" name="REQUEST_TOKEN" value="<?php echo REQUEST_TOKEN; ?>">
+        <?php echo $this->textArea; ?>
+    </div>
+    <div class="tl_formbody_submit">
+        <div class="tl_submit_container">
+            <input type="submit" class="tl_submit" value="<?php echo $this->submitText ?>">
+        </div>
+    </div>
+</form>
+
+
